@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Portfolio hjemmeside">
+        <meta name="author" content="Kasper Glud Melgaard">
+        
+        <title>Portfølje - Kasper Glud Melgaard - Kontakt mig</title>
+        
+        <!-- Awesome Font -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Brugbare links til Awesome font 
+        Ikoner : https://fontawesome.com/icons
+
+        -->
+        <!-- Awesome font JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+        
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- Navigationsbar CSS -->
+        <link rel="stylesheet" href="CSS/NavigationsBar.css">
+        
+        <!-- Page view CSS (Dette bliver brugt til at få "footeren" til at se ordenligt ud på siden) -->
+        <link rel="stylesheet" href="CSS/Pageview.css">
+        
+    </head>
+    <body>
+        <!-- Navigationsbar -->
+        <div class="topnavigation" id="minTopnavigation">
+            <!-- Indhold -->
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+            <a href="projekt-overview.html">
+                <i class="fas fa-project-diagram"></i>
+                Projekter
+            </a>
+            <a href="om-mig.html">
+                <i class="fas fa-info"></i>
+                Om mig
+            </a>
+            <a href="Kontakt-mig.html" class="active">
+                <i class="fas fa-file-contract"></i>
+                Kontakt mig
+            </a>
+            
+            <!-- Navigationsbar script -->
+            <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- Footer -->
+        <footer class="minFooter">
+            <div class="bottom-footer">
+                 <div class="row" style="margin-top: 7px;" align-content="center">
+                     <p> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &copy; Kasper Glud Melgaard 2018.</p> 
+                 </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <!-- Navigationsbar JS -->
+        <script> 
+            function navFunction() {
+                var x = document.getElementById("minTopnavigation");
+                if (x.className === "topnavigation") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnavigation";
+                }
+            }
+        </script>
+    </body>
+</html>

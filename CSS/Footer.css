@@ -1,0 +1,15 @@
+.minFooter{
+    background-color: #f8f8f8;
+    color: #00a651;
+    padding-top: 0px;
+    border-top: 1px solid #e7e7e7;
+    margin-bottom: 0px;
+}
+
+.bottom-footer{
+    border-top: 1px solid #00a651;
+    margin-top: 0px;
+    padding-top: 7px;
+    color: #00a651;
+
+}
