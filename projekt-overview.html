@@ -36,8 +36,19 @@
             $(function(){ 
                 $("#ProjektGDBeskrivelse").load("/ProjektInformation/GD/ProjektGD.html #KortBeskrivelse"); 
                 $("#ProjektGDStatus").load("/ProjektInformation/GD/ProjektGD.html #Status");
-                //Dette skript loader linksne fra forsiden til elementerne med id= "LinksLoaded"
-                $("#LinksLoaded").load("index.html #Links");
+
+                // Projekt loader for template
+                $("#ProjektTemplateNavn").load("/ProjektInformation/GD/ProjektTemplate.html #ProjektNavn");
+                $("#ProjektTemplateStatus").load("/ProjektInformation/GD/ProjektTemplate.html #ProjektStatus");
+                $("#ProjektTemplateBeskrivelse").load("/ProjektInformation/GD/ProjektTemplate.html #ProjektBeskrivelse");
+                
+                
+            });
+        </script> 
+        <!-- Dette skript loader linksne fra forsiden til elementerne med id= "LinksLoaded"  -->
+        <script> 
+            $(function(){ 
+                $("#LinksLoaded").load("index.html #Links"); 
             });
         </script>
         
@@ -120,12 +131,12 @@
                     <div class="col-sm 6">
                         <div class="container" style="background-color: whitesmoke; border-style: ridge; border-color: blue; width: 100%; height: 100%;">
                             <img src="IMG/GD.Logo.png" alt="GamingDanmark Logo" class="zoom">
-                            <h2 style="align: left;">Projektnavn: <h3>Indsæt projekt navn her</h3></h2>
+                            <h2 style="align: left;">Projektnavn: <div id="ProjektTemplateNavn"></div></h2>
                             <p style="font-size: 25px;"><strong>Status:</strong></p>
-                            <i class="fas fa-spinner fa-spin"></i>
+                            <div id="ProjektTemplateStatus"></div>
                             <br>
                             <h4>Beskrivelse:</h4>
-                            <div id="#IDSKALSÆTTES"></div>
+                            <div id="ProjektTemplateBeskrivelse"></div>
                             <a href="#LINK">
                                 <button type="button" class="btn btn-primary btn-lg  btn-block">Klik her for at læse mere</button>
                             </a>
@@ -139,12 +150,12 @@
                     <div class="col-sm 4">
                         <div class="container" style="background-color: whitesmoke; border-style: ridge; border-color: blue; width: 100%; height: 100%;">
                             <img src="IMG/GD.Logo.png" alt="GamingDanmark Logo" class="zoom">
-                            <h2 style="align: left;">Projektnavn: <h3>Indsæt projekt navn her</h3></h2>
+                            <h2 style="align: left;">Projektnavn: <div id="ProjektTemplateNavn"></div></h2>
                             <p style="font-size: 25px;"><strong>Status:</strong></p>
-                            <i class="fas fa-spinner fa-spin"></i>
+                            <div id="ProjektTemplateStatus"></div>
                             <br>
                             <h4>Beskrivelse:</h4>
-                            <div id="#IDSKALSÆTTES"></div>
+                            <div id="ProjektTemplateBeskrivelse"></div>
                             <a href="#LINK">
                                 <button type="button" class="btn btn-primary btn-lg  btn-block">Klik her for at læse mere</button>
                             </a>
@@ -154,12 +165,12 @@
                     <div class="col-sm 4">
                         <div class="container" style="background-color: whitesmoke; border-style: ridge; border-color: blue; width: 100%; height: 100%;">
                             <img src="IMG/GD.Logo.png" alt="GamingDanmark Logo" class="zoom">
-                            <h2 style="align: left;">Projektnavn: <h3>Indsæt projekt navn her</h3></h2>
+                            <h2 style="align: left;">Projektnavn: <div id="ProjektTemplateNavn"></div></h2>
                             <p style="font-size: 25px;"><strong>Status:</strong></p>
-                            <i class="fas fa-spinner fa-spin"></i>
+                            <div id="ProjektTemplateStatus"></div>
                             <br>
                             <h4>Beskrivelse:</h4>
-                            <div id="#IDSKALSÆTTES"></div>
+                            <div id="ProjektTemplateBeskrivelse"></div>
                             <a href="#LINK">
                                 <button type="button" class="btn btn-primary btn-lg  btn-block">Klik her for at læse mere</button>
                             </a>
@@ -169,12 +180,12 @@
                     <div class="col-sm 4">
                         <div class="container" style="background-color: whitesmoke; border-style: ridge; border-color: blue; width: 100%; height: 100%;">
                             <img src="IMG/GD.Logo.png" alt="GamingDanmark Logo" class="zoom">
-                            <h2 style="align: left;">Projektnavn: <h3>Indsæt projekt navn her</h3></h2>
+                            <h2 style="align: left;">Projektnavn: <div id="ProjektTemplateNavn"></div></h2>
                             <p style="font-size: 25px;"><strong>Status:</strong></p>
-                            <i class="fas fa-spinner fa-spin"></i>
+                            <div id="ProjektTemplateStatus"></div>
                             <br>
                             <h4>Beskrivelse:</h4>
-                            <div id="#IDSKALSÆTTES"></div>
+                            <div id="ProjektTemplateBeskrivelse"></div>
                             <a href="#LINK">
                                 <button type="button" class="btn btn-primary btn-lg  btn-block">Klik her for at læse mere</button>
                             </a>
