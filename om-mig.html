@@ -27,6 +27,16 @@
         <!-- Page view CSS (Dette bliver brugt til at få "footeren" til at se ordenligt ud på siden) -->
         <link rel="stylesheet" href="CSS/Pageview.css">
         
+        <!-- Jquery JS -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        
+        <!-- Dette skript loader linksne fra forsiden til elementerne med id= "LinksLoaded"  -->
+        <script> 
+            $(function(){ 
+                $("#LinksLoaded").load("index.html #Links"); 
+            });
+        </script> 
+        
     </head>
     <body>
         <!-- Navigationsbar -->
@@ -59,16 +69,141 @@
             </a>
         </div>
         
+        <div class="jumbotron text-center">
+            <div class="row">
+                <div class="col-sm 2">
+                    <i class="fas fa-info fa-4x"></i>
+                 </div>
+                <div class="col-sm 4">
+                    <h1 style="font-size: 55px;">Om mig</h1>
+                 </div>
+                <div class="col-sm 2">
+                    <i class="fas fa-info fa-4x"></i>
+                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- KORT OM MIG -->
+            <h1>Kort info om mig:</h1>
+            <p>Med en i gang værende uddannelse indenfor Data- og Kommunikation uddannelsen vil jeg rigtig gerne videreudvikle mine færdigheder indenfor IT og programmering, jeg er allerede godt i gang med at få bygget et godt grundlag for at jeg kan blive en programmør med en solid viden indenfor de forskellige programmerings sprog.</p>
+            <!-- KORT OM MIG -->
+            <h1>Uddannelse:</h1>
+            <ul>
+                <li>
+                    2018 : Bestod GF 2 på Aarhus Tech (Data- og kommunikations uddannelse)
+                </li>
+                <li>
+                    2017 : Startet på EUX Aarhus Tech, Data- og kommunikations uddannelse 
+                </li>
+                <li>
+                    2016-2017 : 10. klasses afgangseksamen, Hadsten Skole 
+                </li>
+                <li>
+                    2015-2016 : 9. klasses afgangseksamen, Hadsten Skole
+                </li>
+                <li>
+                    2006-2015 : 1-8 Klasse på Hadsten Skole
+                </li>
+            </ul>
+            <h1>Kompetencer:</h1>
+            <ul>
+                <li>
+                    Har et godt kendskab til Office programmerne.
+                </li>
+                <li>
+                    Begynder indenfor HTML (Hjemmesideopsætning)
+                </li>
+                
+                <li>
+                    Begynder indenfor CSS (Hjemmeside styling)
+                </li>
+                    <ul>
+                <li>
+                    - Begynder indenfor Bootstrap
+                </li>
+                    </ul>
+                <li>
+                    Begynder indenfor Javascript
+                    </li>
+                <ul>
+                 <li>
+                     - Begynder indenfor Vue.js
+                     </li>
+                     </ul>
+                <li>
+                    Begynder indenfor PHP
+                    </li>
+                <li>
+                    Begynder indenfor Java
+                    </li>
+                <li>
+                    Begynder indenfor C#
+                    </li>
+                <li>
+                    Begynder indenfor bitbucket.org (Hjemmeside - til kodere)
+                    </li>
+                <li>
+                    Begynder indenfor github.com (Hjemmeside - til kodere)
+                    </li>
+                <li>
+                    Forståelse for IP adresser og MAC adresser
+                    </li>
+                <li>
+                    Begynder indenfor WireShark
+                    </li>
+                <li>
+                    Erfaren i programmet FileZilla (FTP overførsler- fil overførelser) 
+                    </li>
+                <li>
+                    Begynder indenfor Windows Server 2012R2 (og 2016):
+                    </li>
+                <ul>
+                <li>
+                    - DNS server opsætning
+                    </li>
+                <li>
+                    - DHCP server opsætning
+                    </li>
+                <li>
+                    - VPN server opsætning
+                    </li>
+                <li>
+                    - AD {Active Directory} (Tynde pc klienter)
+                    </li>
+                <li>
+                    - Automatisk backup
+                    </li>
+                </ul>
+            </ul>
+            <h3 align="center">Download mit fulde CV:</h3>
+            <a href="Assets/CV%20-%20Kasper%20Glud%20Melgaard.pdf" target="_blank">
+            <button class="btn"
+                    style="color: white;
+                           background-color:dodgerblue;
+                           width: 100%;
+                           font-size: 22px;"
+                    >
+                <i class="fa fa-download"></i> Download</button>
+            </a>
+            <br>
+        </div>
         
         
         
-        
-        
-        
+        <!-- LINKS fra forsiden -->
+        <div class="col-sm 2" style="border-style: solid; border-color: dimgray;">
+        <span align="center">
+            <div id="LinksLoaded">
+            </div>
+        </span>
+        </div>
+        <br>
+        <!-- LINKS fra forsiden -->
         
         
         
         <!-- Footer -->
+        <br>
         <footer class="minFooter">
             <div class="bottom-footer">
                  <div class="row" style="margin-top: 7px;" align-content="center">
