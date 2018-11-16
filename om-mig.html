@@ -215,6 +215,28 @@
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         
+        <!-- Zoom funktion til ikoner -->       
+        <style>
+            /* #zoom skal tilføjes som et ID */
+            #zoom {
+                transition: transform .7s; /* Animations tiden i sekunder */
+                margin: 0 auto;
+            }
+
+            #zoom:hover {
+                transform: scale(1.7); /* skalering af objektet (Vil sige 1.7 er 170%) */
+            }
+            /* .zoomtekst skal tilføjes som en class */
+            .zoomtekst {
+                transition: transform .7s; /* Animations tiden i sekunder */
+                margin: 0 auto;
+            }
+
+            .zoomtekst:hover {
+                transform: scale(2.0); /* skalering af objektet (Vil sige 1.7 er 170%) */
+            }
+        </style>
+        
         <!-- Navigationsbar JS -->
         <script> 
             function navFunction() {
